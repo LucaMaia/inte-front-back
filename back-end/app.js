@@ -1,6 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const app = express();
+const Home = require('./models/Home')
 
 app.use(cors());
 
@@ -19,6 +20,8 @@ app.get('/', async(req,res) => {
             text_one:"Exemplo 123",
             text_two:"Exemplo 2",
             text_three:"Exemplo 3",
+            btn_title: "",
+            btn_link: ""
         }
     })
 })
